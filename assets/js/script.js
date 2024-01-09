@@ -29,11 +29,11 @@ $(document).ready(function () {
             let eventText = textArea.val();
             localStorage.setItem("event_" + i, eventText);
            });
-    }
-    
+        }
+        //Append elements to time block
+    timeBlock.append(hour, textArea, saveBtn);
 
-
-    
-
+    //Append time block to container
+    $(".container").append(timeBlock);
  
-})
+});
