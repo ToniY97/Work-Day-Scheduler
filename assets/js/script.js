@@ -46,6 +46,7 @@ $(document).ready(function () {
     }
     // Display current time below the scheduler
   setInterval(function () {
-    $("#currentDateTime").text(dayjs().format("dddd, MMMM D, YYYY h:mm:ss A"));
-  }, 1000); // Updates every second
+    let currentTime = dayjs().format("h:mm A");
+    $("#currentTime").text(currentTime);
+  }, 1000); // Update every second
 });
