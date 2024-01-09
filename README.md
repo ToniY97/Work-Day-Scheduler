@@ -18,5 +18,5 @@
 - jQuery
 - Day.js
 
-![snapshot]()
-![link]()
+![snapshot](./assets/screencapture.png)
+![link](//toniy97.github.io/Work-Day-Scheduler/)
