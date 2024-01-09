@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+    for (let i = 9; i <= 17; i++){
+        let savedEvent = localStorage.getItem("event_" + i);
+        if (savedEvent) {
+            $(".container").find(".time-block").eq(i - 9).find("textarea").val(savedEvent);
+        }
+    }
     //Display current day
     $("#currenDay").text(daysjs().format("dddd, MMMM D"));
 
