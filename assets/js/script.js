@@ -44,5 +44,8 @@ $(document).ready(function () {
       // Append time block to container
       $(".container").append(timeBlock);
     }
- 
+    // Display current time below the scheduler
+  setInterval(function () {
+    $("#currentDateTime").text(dayjs().format("dddd, MMMM D, YYYY h:mm:ss A"));
+  }, 1000); // Updates every second
 });
